@@ -53,7 +53,7 @@
                      </li> -->
 
                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="productsDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button"
                            data-bs-toggle="dropdown" aria-expanded="false">
                            Our Innovations
                         </a>
@@ -502,4 +502,4 @@
 
 
    </main>
-   <?php include 'footer.php'; ?>
+<?php include 'footer.php'; ?>
