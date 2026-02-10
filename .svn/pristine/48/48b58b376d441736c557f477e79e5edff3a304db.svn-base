@@ -24,13 +24,13 @@
          <div class="footer-middle">
            <h5>Quick links</h5>
            <div class="footer-links">
-             <a href="index">Home</a>
-             <a href="about">About Us</a>
-             <a href="ourservices">Our Services</a>
+             <a href="index.php">Home</a>
+             <a href="about.php">About Us</a>
+             <a href="ourservices.php">Our Services</a>
              <!-- <a href="hrms.php">Our Innovation</a> -->
-             <a href="career">Career</a>
-             <a href="contact">Contact Us</a>
-             <a href="contact">Get Started</a>
+             <a href="career.php">Career</a>
+             <a href="contact.php">Contact Us</a>
+             <a href="contact.php">Get Started</a>
            </div>
          </div>
        </div>

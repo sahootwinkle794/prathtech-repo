@@ -24,13 +24,13 @@
          <div class="footer-middle">
            <h5>Quick links</h5>
            <div class="footer-links">
-             <a href="index">Home</a>
-             <a href="about">About Us</a>
-             <a href="ourservices">Our Services</a>
-             <!-- <a href="hrms.php">Our Innovation</a> -->
-             <a href="career">Career</a>
-             <a href="contact">Contact Us</a>
-             <a href="contact">Get Started</a>
+             <a href="index.php">Home</a>
+             <a href="about.php">About Us</a>
+             <a href="ourservices.php">Our Services</a>
+             <!-- <a href="our-innovation.php">Our Innovation</a> -->
+             <a href="career.php">Career</a>
+             <a href="contact.php">Contact Us</a>
+             <a href="contact.php">Get Started</a>
            </div>
          </div>
        </div>
@@ -342,7 +342,7 @@
  </script>
 
  <!--Start of Tawk.to Script-->
- <!-- <script type="text/javascript">
+ <script type="text/javascript">
    var Tawk_API = Tawk_API || {},
      Tawk_LoadStart = new Date();
    (function() {
@@ -354,7 +354,7 @@
      s1.setAttribute('crossorigin', '*');
      s0.parentNode.insertBefore(s1, s0);
    })();
- </script> -->
+ </script>
 
  <!--End of Tawk.to Script-->
 
@@ -369,6 +369,70 @@
  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js'></script> -->
  <script src="./script.js"></script>
  <script src="js/script.js"></script>
+ <script>
+   const hamburger = document.getElementById("hamburger");
+   const menu = document.getElementById("menu");
+   const closeBtn = document.querySelector(".menu-close");
+
+
+   // Toggle full menu
+   hamburger.addEventListener("click", () => {
+     menu.classList.toggle("open");
+   });
+
+   // Close on X button
+   closeBtn.addEventListener("click", () => {
+     menu.classList.remove("open");
+   });
+
+   // Auto-close when clicking a link (except dropdown toggles)
+   document.querySelectorAll("#menu a.nav-link").forEach((link) => {
+     if (!link.classList.contains("mobile-toggle")) {
+       link.addEventListener("click", () => {
+         menu.classList.remove("open");
+       });
+     }
+   });
+
+   // Mobile dropdown toggles
+   document.querySelectorAll(".mobile-toggle").forEach((toggle) => {
+     toggle.addEventListener("click", () => {
+       const dropdown = toggle.nextElementSibling;
+       dropdown.classList.toggle("open");
+     });
+   });
+
+
+
+
+   $(".servicetext-carousel").owlCarousel({
+     autoplay: true,
+     loop: true,
+     margin: 15,
+     dots: false,
+     slideTransition: "linear",
+     autoplayTimeout: 5500,
+     autoplayHoverPause: true,
+     autoplaySpeed: 5500,
+     responsive: {
+       0: {
+         items: 2
+       },
+       500: {
+         items: 3
+       },
+       600: {
+         items: 4
+       },
+       800: {
+         items: 4
+       },
+       1200: {
+         items: 4
+       }
+     }
+   });
+ </script>
 
  <!-- Test SCript for banner section -->
  <script>
@@ -490,22 +554,6 @@
    });
  </script>
 
-
-
- <!-- Header script for parent dropdown -->
- <script>
-   document.addEventListener('DOMContentLoaded', function() {
-     document.querySelectorAll('.dropdown-submenu > a').forEach(function(element) {
-       element.addEventListener('click', function(e) {
-         e.preventDefault();
-         e.stopPropagation();
-
-         let submenu = this.nextElementSibling;
-         submenu.classList.toggle('show');
-       });
-     });
-   });
- </script>
 
 
 

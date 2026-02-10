@@ -86,8 +86,7 @@
         <h5>Position</h5>
       </div>
       <div class="col-md-4">
-        <!-- <h5>Roles</h5> -->
-        <h5>Openings</h5>
+        <h5>Roles</h5>
       </div>
       <div class="col-md-4">
         <h5>Experience</h5>
@@ -909,7 +908,7 @@
       </div>
       <div class="modal-footer">
         <!-- <a href="https://docs.google.com/forms/d/e/1FAIpQLSelLFBDyGaP2ZQa5RQt9n7AphZ-FwajI2iuxqRDuTCDlYXaYw/viewform?usp=sharing&ouid=112274047517184181534" target="_blank" class="btn btn-primary">Apply Now <img src="images/arrow.png" alt=""></a> -->
-        <a href="https://hrms.prathtech.com/job_application/new?job_title=HR-OPN-2026-0014" target="_blank"
+        <a href="https://hrms.prathtech.com/job_application/new?job_title=HR-OPN-2026-0004" target="_blank"
           class="btn btn-primary">Apply Now <img src="images/arrow.png" alt=""></a>
       </div>
     </div>
